@@ -1,3 +1,4 @@
+--주요 테이블/컬럼 정보 마스킹, 복원 후 사용해야 하는 SQL Query
 CREATE OR REPLACE FUNCTION public.get_monthlyreport(
 	OUT st_day character varying,
 	OUT ed_day character varying,
