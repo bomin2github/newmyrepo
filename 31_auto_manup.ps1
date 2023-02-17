@@ -37,14 +37,6 @@ $backupsdk = "backup path2"
 ##start script
 	echo "`n For autobackup, Please exit the TOOLNAME within 10 minutes after download. `n`n"
 
-<#
-if ( (gps|where {$_.processname -eq "hmanup"}).id -lt 0 ){
-	echo "notrunning"
-}
-if ((gps|where {$_.processname -eq "hmanup"}).id -gt 0){
-	echo "running"
-}
-#>
 
 ##start hmanup process
 $flag_pid = (gps|where {$_.processname -eq "PROCESSNAME"}).id
